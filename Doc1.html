@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya Raj Melayikandy's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px; /* Space for the underline */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%; /* Shorter underline */
+            height: 3px;
+            background-color: #6366f1; /* Indigo color */
+            border-radius: 9999px; /* Rounded corners for the underline */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 lg:px-24">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 rounded-md p-2 hover:bg-indigo-50 transition duration-300">Adithya Raj Melayikandy</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">About</a></li>
+                <li><a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Experience</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Skills</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Projects</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md p-2 hover:bg-indigo-50">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-6 md:px-12 lg:px-24 text-center rounded-b-lg shadow-lg">
+        <div class="container mx-auto">
+            <img src="https://placehold.co/150x150/6366f1/ffffff?text=AR" alt="Profile Picture of Adithya Raj Melayikandy" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-5xl font-extrabold mb-4">Hello, I'm Adithya Raj Melayikandy</h1>
+            <p class="text-xl mb-8">A Results-driven professional specializing in AI/ML, system optimization, and full-stack development.</p>
+            <a href="#projects" class="bg-white text-indigo-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 md:px-12 lg:px-24 bg-white rounded-lg shadow-md mx-auto my-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center section-heading">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">
+                Welcome to my portfolio! I am a results-driven professional with expertise in Oracle Fusion Cloud HCM, SAP Fieldglass VMS, and full-stack development. I have a strong foundation in AI/ML, system optimization, and scalable solutions, with a focus on performance enhancement and user experience. Currently pursuing an MS in Computer Science at the University at Buffalo, specializing in AI-driven innovations, I am passionate about solving complex problems and building innovative solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-100 rounded-lg shadow-md mx-auto my-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-center section-heading">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience 1: Assistant System Engineer -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Assistant System Engineer - Tata Consultancy Services</h3>
+                    <p class="text-gray-600 mb-4">June 2023 - August 2024 | Mumbai, India</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Oracle Fusion Cloud HCM & SAP Fieldglass Consultant with expertise in human capital management and vendor management systems (VMS).</li>
+                        <li>Experienced in system implementations, integrations, and cloud transitions to streamline business processes.</li>
+                        <li>Optimized workflows and enhanced system performance for improved efficiency and scalability.</li>
+                    </ul>
+                </div>
+                <!-- Experience 2: Trainee Associate Software Engineer -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Trainee Associate Software Engineer - Sieva Networks Solutions</h3>
+                    <p class="text-gray-600 mb-4">April 2023 - May 2023 | Remote</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Maintained PHP-based backend systems.</li>
+                        <li>Integrated APIs and third-party services for enhanced functionality.</li>
+                        <li>Optimized backend performance for scalability and efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-6 md:px-12 lg:px-24 bg-white rounded-lg shadow-md mx-auto my-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-center section-heading">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Machine Learning & AI Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Machine Learning & AI</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Supervised & Unsupervised Learning</li>
+                        <li>Deep Learning (ANN, CNN, RNN, LSTM, GANs)</li>
+                        <li>Transfer Learning (ResNet, BERT)</li>
+                        <li>Computer Vision (Image Classification, Object Detection, Camera Calibration)</li>
+                        <li>Natural Language Processing (Tokenization, Embeddings, Sentiment Analysis)</li>
+                        <li>Transformer-based Models (BERT, GPT-style, Word2Vec)</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Explainability & Model Debugging</li>
+                        <li>Hyperparameter Tuning, Overfitting Mitigation</li>
+                        <li>Data Mining & Statistical Modeling (PageRank, Graphical Lasso)</li>
+                    </ul>
+                </div>
+                <!-- ML Frameworks & Libraries -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">ML Frameworks & Libraries</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>TensorFlow / Keras</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-learn</li>
+                        <li>OpenCV</li>
+                        <li>NLTK / spaCy</li>
+                        <li>Hugging Face Transformers</li>
+                        <li>LangChain</li>
+                    </ul>
+                </div>
+                <!-- Software & Web Development Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Software & Web Development</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Languages: Python, JavaScript, C/C++, Java, SQL, R, PHP</li>
+                        <li>Frontend: React.js, HTML5, CSS3, Tailwind CSS, Responsive Web Design, EJS</li>
+                        <li>Backend: Node.js, Express.js, RESTful API Development</li>
+                        <li>Databases: MongoDB, Mongoose, Firebase/Firestore, MySQL, PostgreSQL, FAISS</li>
+                        <li>Version Control: Git & GitHub</li>
+                        <li>Cloud & Deployment: Docker, AWS EC2 (beginner)</li>
+                    </ul>
+                </div>
+                <!-- Data Science & Analytics Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Data Science & Analytics</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Data Handling: Pandas, NumPy, Data Cleaning & Preprocessing, Data Augmentation</li>
+                        <li>Visualization: Matplotlib, Seaborn, Plotly, ggplot2</li>
+                        <li>Statistical Analysis: Hypothesis Testing, Correlation, Time Series Analysis</li>
+                        <li>SQL for Data Extraction & Optimization</li>
+                        <li>Advanced Excel Functions (VLOOKUP, IF, OR, Pivot Tables)</li>
+                        <li>Business Analysis (Margin, Sourcing Loss, Fill Rate, Inventory at Risk)</li>
+                    </ul>
+                </div>
+                <!-- Computer Science Fundamentals -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Computer Science Fundamentals</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Data Structures (Arrays, Linked Lists, Trees, Graphs, Heaps)</li>
+                        <li>Algorithms (Sorting, Searching, Greedy, Divide & Conquer, Dynamic Programming)</li>
+                        <li>Time and Space Complexity Analysis</li>
+                        <li>Recursion and Backtracking, Hashing, Memoization</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Operating Systems Internals (Syscall Handling, Process Control, Scheduling Algorithms, Kernel Debugging)</li>
+                        <li>Memory Management (Stack Layout, Virtual Memory)</li>
+                    </ul>
+                </div>
+                <!-- Tools & Platforms -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Tools & Platforms</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Jupyter Notebooks, Kaggle, Google Colab / Colab Pro</li>
+                        <li>Weights & Biases / TensorBoard</li>
+                        <li>UNIX/Linux Command Line</li>
+                        <li>APIs (Integration & Development)</li>
+                        <li>Postman, VS Code, PyCharm</li>
+                        <li>Notion / Trello / Slack</li>
+                        <li>GDB, QEMU</li>
+                        <li>SAP Fieldglass, Oracle HCM Cloud, Azure, MS Office</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-100 rounded-lg shadow-md mx-auto my-8 max-w-7xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-center section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: AI Chatbot with Sentiment Analysis -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Sentiment+Chatbot" alt="Sentiment Analysis Chatbot Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">AI Chatbot with Sentiment Analysis</h3>
+                    <p class="text-gray-700 mb-4">Developed a conversational AI chatbot leveraging NLP techniques for sentiment and sarcasm classification. Integrated with LangChain and vector databases for RAG capabilities, providing a Streamlit UI.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LangChain</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vector DBs</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 2: Image Translation with GANs -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Image+Translation" alt="Image Translation Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Sketch-to-Photo Image Translation</h3>
+                    <p class="text-gray-700 mb-4">Implemented a Pix2Pix Generative Adversarial Network (GAN) for image-to-image translation, specifically converting hand-drawn sketches into realistic photos using the CUHK Dataset.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">GANs</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Computer Vision</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Deep Learning</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 3: Transformer-Based Text Classification -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Text+Classification" alt="Transformer-Based Text Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Transformer-Based Text Classification (PyTorch)</h3>
+                    <p class="text-gray-700 mb-4">Built a Transformer model from scratch in PyTorch for NLP classification. Implemented positional encoding and attention mechanisms, achieving over 94% test accuracy with various optimization techniques.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Transformers</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 4: Emoji Guess Game -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Emoji+Game" alt="Emoji Guess Game Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Emoji Guess Game</h3>
+                    <p class="text-gray-700 mb-4">Developed an interactive emoji-based game using React, featuring predictive logic to determine the user's chosen emoji based on row selections. Optimized UI for dynamic updates and real-time feedback.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">UI/UX</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 5: Todo List Application -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Todo+List" alt="Todo List Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">To-Do List Application</h3>
+                    <p class="text-gray-700 mb-4">Developed a dynamic and user-friendly To-Do List application using EJS and HTML for the frontend. Implemented a Node.js backend for task management and utilized MongoDB with Mongoose for data persistence.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">EJS</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 6: Multilabel External Fault Classification -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Fault+Classification" alt="Multilabel External Fault Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Multilabel External Fault Classification of Induction Motor</h3>
+                    <p class="text-gray-700 mb-4">A project involving the classification of external faults in induction motors using Machine Learning Models, published in IEEE. This showcases expertise in applying ML to real-world engineering problems.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Data Analysis</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Publication</a>
+                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 lg:px-24 bg-white rounded-lg shadow-md mx-auto my-8 max-w-7xl">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 section-heading">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                I'm always open to new opportunities and collaborations. Feel free to reach out if you have any questions or just want to connect!
+            </p>
+            <div class="flex flex-col items-center space-y-4">
+                <a href="mailto:adithyamelayikandy@gmail.com" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                    Email Me
+                </a>
+                <div class="flex space-x-6 mt-4">
+                    <a href="https://linkedin.com/in/adithya-raj-melayikandy" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11 1.02-.26 1.02-.577v-2.227c-3.332.727-4.035-1.618-4.035-1.618-.546-1.387-1.332-1.757-1.332-1.757-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.303 3.49.997.108-.775.419-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.382 1.235-3.22-.124-.304-.535-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.656.242 2.872.118 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.624-5.475 5.922.43.37.817 1.103.817 2.227v3.293c0 .319.416.694 1.027.576C20.566 21.808 24 17.311 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-6 md:px-12 lg:px-24 text-center rounded-t-lg shadow-inner">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Adithya Raj Melayikandy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

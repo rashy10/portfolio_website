@@ -7,6 +7,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -49,7 +50,7 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-6 md:px-12 lg:px-24 text-center rounded-b-lg shadow-lg">
         <div class="container mx-auto">
-            <img src="https://placehold.co/150x150/6366f1/ffffff?text=AR" alt="Profile Picture of Adithya Raj Melayikandy" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEXnISV-0i02A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701196354452?e=1758153600&v=beta&t=eY8iYSrW3WeQkQetvu_0vIG6O9_c4gGbRfYiXN7Yizk" alt="Profile Picture of Adithya Raj Melayikandy" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg" style="width: 350px; height: 350px;">
             <h1 class="text-5xl font-extrabold mb-4">Hello, I'm Adithya Raj Melayikandy</h1>
             <p class="text-xl mb-8">A Results-driven professional specializing in AI/ML, system optimization, and full-stack development.</p>
             <a href="#projects" class="bg-white text-indigo-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">View My Work</a>
@@ -66,34 +67,292 @@
         </div>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-100 rounded-lg shadow-md mx-auto my-8 max-w-7xl">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-10 text-center section-heading">Professional Experience</h2>
-            <div class="space-y-8">
-                <!-- Experience 1: Assistant System Engineer -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Assistant System Engineer - Tata Consultancy Services</h3>
-                    <p class="text-gray-600 mb-4">June 2023 - August 2024 | Mumbai, India</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Oracle Fusion Cloud HCM & SAP Fieldglass Consultant with expertise in human capital management and vendor management systems (VMS).</li>
-                        <li>Experienced in system implementations, integrations, and cloud transitions to streamline business processes.</li>
-                        <li>Optimized workflows and enhanced system performance for improved efficiency and scalability.</li>
-                    </ul>
+   
+
+    <!-- Professional Experience (Enhanced Timeline Cards) -->
+    <section id="experience" class="relative py-20 px-6 md:px-12 lg:px-24 mx-auto max-w-7xl">
+    <!-- Background accents -->
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute -top-20 -left-24 h-72 w-72 rounded-full bg-indigo-100 blur-3xl opacity-60"></div>
+        <div class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-blue-100 blur-3xl opacity-60"></div>
+    </div>
+
+    <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-center text-gray-900">
+        Professional Experience
+        </h2>
+        <p class="mt-3 text-center text-gray-600 max-w-2xl mx-auto">
+        Roles, responsibilities, and impact across engineering and consulting.
+        </p>
+
+        <!-- Timeline -->
+        <ol role="list" class="mt-14 relative border-s-2 border-dashed border-indigo-200 ms-6">
+        <!-- Item: TCS -->
+        <li class="mb-12 ms-6">
+            <!-- Dot -->
+            <span class="absolute -start-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 ring-8 ring-white shadow-lg">
+            <!-- briefcase icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-4 w-4"><path d="M14 6V4h-4v2H6a2 2 0 0 0-2 2v2h16V8a2 2 0 0 0-2-2h-4Zm6 6H4v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6Z"/></svg>
+            </span>
+
+            <div class="group rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-xl hover:ring-indigo-200 transition-all duration-300">
+            <div class="p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">Assistant System Engineer</h3>
+                    <p class="mt-1 text-indigo-700 font-medium">Tata Consultancy Services</p>
+                    <p class="mt-1 text-sm text-gray-600">June 2023 – August 2024 · Mumbai, India</p>
                 </div>
-                <!-- Experience 2: Trainee Associate Software Engineer -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Trainee Associate Software Engineer - Sieva Networks Solutions</h3>
-                    <p class="text-gray-600 mb-4">April 2023 - May 2023 | Remote</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Maintained PHP-based backend systems.</li>
-                        <li>Integrated APIs and third-party services for enhanced functionality.</li>
-                        <li>Optimized backend performance for scalability and efficiency.</li>
-                    </ul>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-200">Oracle Fusion Cloud HCM</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700 ring-1 ring-inset ring-violet-200">SAP Fieldglass</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-200">Integrations</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">Cloud Migrations</span>
+                </div>
+                </div>
+
+                <p class="mt-5 text-gray-700">
+                Helped organizations transform how they manage people and vendors by designing and implementing Oracle Fusion Cloud HCM and SAP Fieldglass solutions. Simplified processes, connected systems, and empowered teams with workflow automation and secure, scalable cloud architectures.
+                </p>
+
+                <!-- Impact bullets -->
+                <ul class="mt-5 space-y-3 text-gray-800">
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-500"></span><span>Led end‑to‑end implementations (discovery → configuration → testing → go‑live) with clean handoffs and documentation.</span></li>
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-500"></span><span>Integrated HCM/Fieldglass with payroll, identity, and analytics (REST/SOAP APIs, SFTP) to eliminate data silos.</span></li>
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-500"></span><span>Automated key workflows (approvals, onboarding, time & expenses) to reduce cycle times and manual effort.</span></li>
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-500"></span><span>Hardened security and compliance via role‑based access, audit trails, and environment controls.</span></li>
+                </ul>
+
+                <!-- Quick metrics / highlights (optional) -->
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="rounded-xl bg-indigo-50 ring-1 ring-inset ring-indigo-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-indigo-700">↑ Efficiency</div>
+                    <div class="text-xs text-indigo-900/80">Workflow cycle time reduced</div>
+                </div>
+                <div class="rounded-xl bg-indigo-50 ring-1 ring-inset ring-indigo-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-indigo-700">↓ Manual Work</div>
+                    <div class="text-xs text-indigo-900/80">Automation coverage expanded</div>
+                </div>
+                <div class="rounded-xl bg-indigo-50 ring-1 ring-inset ring-indigo-200 p-4 text-center">
+                    <div class="text-2xl font-bold text-indigo-700">99.9%</div>
+                    <div class="text-xs text-indigo-900/80">Env. uptime across go‑live</div>
+                </div>
                 </div>
             </div>
+            </div>
+        </li>
+
+        <!-- Item: Sieva -->
+        <li class="mb-6 ms-6">
+            <span class="absolute -start-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 ring-8 ring-white shadow-lg">
+            <!-- code icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-4 w-4"><path d="M8.7 15.9 4.8 12l3.9-3.9 1.4 1.4L7.6 12l2.6 2.6-1.5 1.3Zm6.6 0 1.3-1.3L19.2 12l-2.6-2.6 1.4-1.3L22 12l-3.9 3.9-1.8-1Zm-3.9 3.6L9.9 19l3.9-15.5 1.5.5-3.9 15.5Z"/></svg>
+            </span>
+
+            <div class="group rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-xl hover:ring-blue-200 transition-all duration-300">
+            <div class="p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">Trainee Associate Software Engineer</h3>
+                    <p class="mt-1 text-blue-700 font-medium">Sieva Networks Solutions</p>
+                    <p class="mt-1 text-sm text-gray-600">April 2023 – May 2023 · Remote</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">PHP</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-200">REST APIs</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-fuchsia-50 px-3 py-1 text-xs font-semibold text-fuchsia-700 ring-1 ring-inset ring-fuchsia-200">MySQL</span>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 ring-1 ring-inset ring-amber-200">Performance</span>
+                </div>
+                </div>
+
+                <p class="mt-5 text-gray-700">
+                Built and maintained robust PHP backends, integrating third‑party services and internal APIs to deliver richer functionality. Focused on optimizing performance and scalability for smooth, high‑traffic experiences.
+                </p>
+
+                <ul class="mt-5 space-y-3 text-gray-800">
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-blue-500"></span><span>Implemented API integrations (auth, payments, messaging) with secure request signing and retries.</span></li>
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-blue-500"></span><span>Optimized queries and caching (indexes, pagination, query plans) to cut response times.</span></li>
+                <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-blue-500"></span><span>Hardened error handling, logging, and monitoring for faster incident resolution.</span></li>
+                </ul>
+            </div>
+            </div>
+        </li>
+        </ol>
+
+        <!-- Optional CTA -->
+        <div class="mt-10 text-center">
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+            Get in touch
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4"><path fill-rule="evenodd" d="M2.94 6.94a1.5 1.5 0 0 1 2.12 0L10 11.88l4.94-4.94a1.5 1.5 0 1 1 2.12 2.12l-6 6a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12Z" clip-rule="evenodd"/></svg>
+        </a>
         </div>
+    </div>
     </section>
+
+  
+    <!-- Education Section (Polished Timeline Style) -->
+    <section id="education" class="relative py-20 px-6 md:px-12 lg:px-24 mx-auto max-w-7xl">
+  <!-- Background flair -->
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-indigo-100 blur-3xl opacity-60"></div>
+    <div class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-blue-100 blur-3xl opacity-60"></div>
+  </div>
+
+  <div class="container mx-auto">
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-center text-gray-900">
+      Education
+    </h2>
+    <p class="mt-3 text-center text-gray-600 max-w-2xl mx-auto">
+      A snapshot of my academic journey - coursework, focus areas, and milestones.
+    </p>
+
+    <!-- Timeline -->
+    <ol role="list" class="mt-14 relative border-s-2 border-dashed border-indigo-200 ms-6">
+      <!-- Item: Masters -->
+      <li class="mb-12 ms-6">
+        <!-- Dot -->
+        <span class="absolute -start-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 ring-8 ring-white shadow-lg">
+          <!-- mortarboard icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-4 w-4">
+            <path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 13L5 12.73V16c0 2.21 3.13 4 7 4s7-1.79 7-4v-3.27L12 16Z"/>
+          </svg>
+        </span>
+
+        <div class="group rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-xl hover:ring-indigo-200 transition-all duration-300">
+          <div class="p-6 md:p-8">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <div>
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 flex items-center gap-2">
+                  Masters in Computer Science
+                  <span class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">Graduate</span>
+                </h3>
+                <p class="mt-1 text-indigo-700 font-medium" >University at Buffalo, SUNY</p>
+                <p class="mt-1 text-sm text-gray-600">Fall 2024 – Present</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-200">
+                  GPA: 3.875 / 4.00
+                </span>
+              </div>
+            </div>
+
+            <!-- Highlights / Focus -->
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="col-span-1">
+                <h4 class="text-sm font-semibold text-gray-900">Focus Areas</h4>
+                <ul class="mt-2 space-y-2 text-sm text-gray-700 list-disc ms-4">
+                  <li>Machine Learning & Deep Learning</li>
+                  <li>Computer Vision</li>
+                  <li>Data-Intensive Computing</li>
+                </ul>
+              </div>
+              <div class="col-span-2">
+                <details class="group/courses rounded-xl ring-1 ring-gray-200 bg-gray-50 open:bg-white open:ring-indigo-200 transition-all">
+                  <summary class="flex cursor-pointer items-center justify-between gap-3 px-4 py-3">
+                    <span class="text-sm font-semibold text-gray-900">Relevant Coursework</span>
+                    <span class="shrink-0 text-xs text-indigo-700 inline-flex items-center gap-2">
+                      View list
+                      <svg class="h-4 w-4 transition-transform group-open/courses:rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.293 2.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L11.586 10 6.293 4.707a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </summary>
+                  <div class="px-4 pb-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span class="badge">Computer Security</span>
+                      <span class="badge">Intro to ML</span>
+                      <span class="badge">Algorithms</span>
+                      <span class="badge">Data Intensive Computing</span>
+                      <span class="badge">Deep Learning</span>
+                      <span class="badge">Data Mining</span>
+                      <span class="badge">Operating Systems</span>
+                      <span class="badge">DBMS</span>
+                      <span class="badge">Computer Vision</span>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Item: Bachelors -->
+      <li class="mb-6 ms-6">
+        <span class="absolute -start-3.5 flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 ring-8 ring-white shadow-lg">
+          <!-- diploma icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-4 w-4">
+            <path d="M4 5h16v10H4z" opacity=".4"/><path d="M2 15h20v2H2zM6 19h12v2H6z"/>
+          </svg>
+        </span>
+
+        <div class="group rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-xl hover:ring-blue-200 transition-all duration-300">
+          <div class="p-6 md:p-8">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <div>
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">B.Tech — Electrical & Electronics Engineering</h3>
+                <p class="mt-1 text-blue-700 font-medium" >Amrita Vishwa Vidyapeetham</p>
+                <p class="mt-1 text-sm text-gray-600">July 2018 – August 2022</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">
+                  GPA: 8.19 / 10
+                </span>
+                
+              </div>
+            </div>
+
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="col-span-1">
+                <h4 class="text-sm font-semibold text-gray-900">Core Domains</h4>
+                <ul class="mt-2 space-y-2 text-sm text-gray-700 list-disc ms-4">
+                  <li>Signals & Systems</li>
+                  <li>Power & Control</li>
+                  <li>Embedded & Microcontrollers</li>
+                </ul>
+              </div>
+              <div class="col-span-2">
+                <details class="group/courses2 rounded-xl ring-1 ring-gray-200 bg-gray-50 open:bg-white open:ring-blue-200 transition-all">
+                  <summary class="flex cursor-pointer items-center justify-between gap-3 px-4 py-3">
+                    <span class="text-sm font-semibold text-gray-900">Relevant Coursework</span>
+                    <span class="shrink-0 text-xs text-blue-700 inline-flex items-center gap-2">
+                      View list
+                      <svg class="h-4 w-4 transition-transform group-open/courses2:rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.293 2.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L11.586 10 6.293 4.707a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </summary>
+                  <div class="px-4 pb-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span class="badge badge-green">Circuit Analysis</span>
+                      <span class="badge badge-green">Digital Signal Processing</span>
+                      <span class="badge badge-green">Power Systems</span>
+                      <span class="badge badge-green">Control Systems</span>
+                      <span class="badge badge-green">Microcontrollers</span>
+                      <span class="badge badge-green">Electromagnetics</span>
+                      <span class="badge badge-green">Linear Integrated Circuits</span>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <!-- Footer CTA (optional) -->
+    <div class="mt-10 text-center">
+      <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+        Explore my projects
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"/></svg>
+      </a>
+    </div>
+    </div>
+    </section>
+
+    <!-- Utility badges -->
+    <style>
+    .badge { @apply bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-indigo-200; }
+    .badge-green { @apply bg-green-100 text-green-800 ring-green-200; }
+    </style>
+
 
     <!-- Skills Section -->
     <section id="skills" class="py-16 px-6 md:px-12 lg:px-24 bg-white rounded-lg shadow-md mx-auto my-8 max-w-7xl">
@@ -184,110 +443,169 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+
+
     <section id="projects" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-100 rounded-lg shadow-md mx-auto my-8 max-w-7xl">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold mb-10 text-center section-heading">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1: AI Chatbot with Sentiment Analysis -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Sentiment+Chatbot" alt="Sentiment Analysis Chatbot Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">AI Chatbot with Sentiment Analysis</h3>
-                    <p class="text-gray-700 mb-4">Developed a conversational AI chatbot leveraging NLP techniques for sentiment and sarcasm classification. Integrated with LangChain and vector databases for RAG capabilities, providing a Streamlit UI.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LangChain</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vector DBs</span>
+            
+            <div class="swiper mySwiper relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-4"> 
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Sentiment+Chatbot" alt="Sentiment Analysis Chatbot Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">AI Chatbot with Sentiment Analysis</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">Developed a conversational AI chatbot leveraging NLP techniques for sentiment and sarcasm classification. Integrated with LangChain and vector databases for RAG capabilities, providing a Streamlit UI.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LangChain</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vector DBs</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                                <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Image+Translation" alt="Image Translation Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Sketch-to-Photo Image Translation</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">Implemented a Pix2Pix Generative Adversarial Network (GAN) for image-to-image translation, specifically converting hand-drawn sketches into realistic photos using the CUHK Dataset.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">GANs</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Computer Vision</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Deep Learning</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                                <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Text+Classification" alt="Transformer-Based Text Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Transformer-Based Text Classification (PyTorch)</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">Built a Transformer model from scratch in PyTorch for NLP classification. Implemented positional encoding and attention mechanisms, achieving over 94% test accuracy with various optimization techniques.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Transformers</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                                <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Emoji+Game" alt="Emoji Guess Game Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Emoji Guess Game</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">Developed an interactive emoji-based game using React, featuring predictive logic to determine the user's chosen emoji based on row selections. Optimized UI for dynamic updates and real-time feedback.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">UI/UX</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://emoji-guess-game.vercel.app/" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                                <a href="https://github.com/rashy10/Emoji-guess-game" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Todo+List" alt="Todo List Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">To-Do List Application</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">Developed a dynamic and user-friendly To-Do List application using EJS and HTML for the frontend. Implemented a Node.js backend for task management and utilized MongoDB with Mongoose for data persistence.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">EJS</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
+                                <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                            <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Fault+Classification" alt="Multilabel External Fault Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Multilabel External Fault Classification of Induction Motor</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">A project involving the classification of external faults in induction motors using Machine Learning Models, published in IEEE. This showcases expertise in applying ML to real-world engineering problems.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Data Analysis</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://ieeexplore.ieee.org/document/9917882" class="text-indigo-600 hover:underline font-medium">View Publication</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Project Card 2: Image Translation with GANs -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Image+Translation" alt="Image Translation Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Sketch-to-Photo Image Translation</h3>
-                    <p class="text-gray-700 mb-4">Implemented a Pix2Pix Generative Adversarial Network (GAN) for image-to-image translation, specifically converting hand-drawn sketches into realistic photos using the CUHK Dataset.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">GANs</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Computer Vision</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Deep Learning</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project Card 3: Transformer-Based Text Classification -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Text+Classification" alt="Transformer-Based Text Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Transformer-Based Text Classification (PyTorch)</h3>
-                    <p class="text-gray-700 mb-4">Built a Transformer model from scratch in PyTorch for NLP classification. Implemented positional encoding and attention mechanisms, achieving over 94% test accuracy with various optimization techniques.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Transformers</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project Card 4: Emoji Guess Game -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Emoji+Game" alt="Emoji Guess Game Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Emoji Guess Game</h3>
-                    <p class="text-gray-700 mb-4">Developed an interactive emoji-based game using React, featuring predictive logic to determine the user's chosen emoji based on row selections. Optimized UI for dynamic updates and real-time feedback.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">UI/UX</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project Card 5: Todo List Application -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Todo+List" alt="Todo List Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">To-Do List Application</h3>
-                    <p class="text-gray-700 mb-4">Developed a dynamic and user-friendly To-Do List application using EJS and HTML for the frontend. Implemented a Node.js backend for task management and utilized MongoDB with Mongoose for data persistence.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">EJS</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Live</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project Card 6: Multilabel External Fault Classification -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <img src="https://placehold.co/400x250/e0e7ff/6366f1?text=Fault+Classification" alt="Multilabel External Fault Classification Project" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Multilabel External Fault Classification of Induction Motor</h3>
-                    <p class="text-gray-700 mb-4">A project involving the classification of external faults in induction motors using Machine Learning Models, published in IEEE. This showcases expertise in applying ML to real-world engineering problems.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Data Analysis</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Publication</a>
-                        <a href="#" class="text-gray-600 hover:underline font-medium">GitHub</a>
-                    </div>
-                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none z-10"></div>
+                <div class="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none z-10"></div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            
+            loop: true, 
+            spaceBetween: 30, 
+
+            
+            slidesPerView: 1, 
+            
+            
+            breakpoints: {
+                
+                768: {
+                    slidesPerView: 2, 
+                    spaceBetween: 40
+                },
+              
+                1024: {
+                    slidesPerView: 3, 
+                    spaceBetween: 50
+                }
+            },
+
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+           
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false, 
+            },
+        });
+    </script>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-6 md:px-12 lg:px-24 bg-white rounded-lg shadow-md mx-auto my-8 max-w-7xl">
@@ -306,7 +624,7 @@
                             <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
                         </svg>
                     </a>
-                    <a href="https://github.com/yourprofile" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                    <a href="https://github.com/rashy10" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11 1.02-.26 1.02-.577v-2.227c-3.332.727-4.035-1.618-4.035-1.618-.546-1.387-1.332-1.757-1.332-1.757-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.303 3.49.997.108-.775.419-1.304.762-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.465-2.382 1.235-3.22-.124-.304-.535-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.656.242 2.872.118 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.624-5.475 5.922.43.37.817 1.103.817 2.227v3.293c0 .319.416.694 1.027.576C20.566 21.808 24 17.311 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd" />
                         </svg>
@@ -324,5 +642,7 @@
         </div>
     </footer>
 
+
+    
 </body>
 </html>
